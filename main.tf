@@ -7,6 +7,7 @@ resource "aws_instance" "appserver" {
     tags = {
       Name="Jenkins"
     }
+    vpc_security_group_ids = [var.security_group_id]
   
 }
 resource "aws_security_group" "app_sg" {
