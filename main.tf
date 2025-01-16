@@ -5,7 +5,7 @@ resource "aws_instance" "appserver" {
     ami = var.ami_id
     instance_type = var.instance_type
     tags = {
-      Name="TaskmgmtAppserver"
+      Name="Jenkins"
     }
   
 }
