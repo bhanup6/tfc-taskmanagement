@@ -8,3 +8,8 @@ variable "ami_id" {
 variable "instance_type" {
   default = "t2.micro"
 }
+variable "security_group_id" {
+    type = string
+    default = "null"
+  
+}
