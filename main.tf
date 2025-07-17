@@ -17,6 +17,7 @@ resource "aws_instance" "aws-decom-instance" {
     Name="AWS Decom Instance"
   }
   vpc_security_group_ids = [var.security_group_id]
+  user_data = file("user_data.sh")
 }
 resource "aws_security_group" "app_sg" {
   name        = "allow_web_traffic"
