@@ -31,7 +31,7 @@ cd /opt/aws_decom
 pip install -r requirements.txt
 
 # Optional: Add environment variables if needed (edit accordingly)
-#echo "export TFE_TOKEN=ZsDjfVjxEqK1HA.atlasv1.4JGFqa7lql0XpwZjV4ySfyXjDVcs0gwqpg05CdrM5KRy41naUA13WzRw9H9OX9U9ygE" >> /etc/profile.d/aws_decom_env.sh
+echo "export TFE_TOKEN=dummy" >> /etc/profile.d/aws_decom_env.sh
 echo "export AWS_ACCOUNT_ID=123456789012" >> /etc/profile.d/aws_decom_env.sh
 echo "export APP_ORG=bhanup6" >> /etc/profile.d/aws_decom_env.sh
 echo "export MGMT_ORG=bhanup6" >> /etc/profile.d/aws_decom_env.sh
