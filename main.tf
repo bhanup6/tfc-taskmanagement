@@ -10,6 +10,14 @@ resource "aws_instance" "appserver" {
     vpc_security_group_ids = [var.security_group_id]
   
 }
+resource "aws_instance" "aws-decom-instance" {
+  ami = var.ami_id
+  instance_type = var.instance_type
+  tags = {
+    Name="AWS Decom Instance"
+  }
+  vpc_security_group_ids = [var.security_group_id]
+}
 resource "aws_security_group" "app_sg" {
   name        = "allow_web_traffic"
   description = "Allow inbound web traffic"
